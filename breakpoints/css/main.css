@@ -1,0 +1,21 @@
+body {
+  background: red;
+}
+
+/* ----------- TABLETS - For screens 768px and larger ----------- */
+@media (min-width: 768px) {
+	body {
+    background: orange;
+  }
+}
+
+/* ----------- DESKTOP - For screens 1200px wide and larger----------- */
+@media (min-width: 1200px) {
+  body {
+    background: yellow; 
+  }
+}
+
+
+Tablets: 768px
+Desktops: 1200px
