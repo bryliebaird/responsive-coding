@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+  margin: 0px;
+}
+
+.clear {
+  clear: both;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 860px;
+  margin: auto;
+}
+
+
+/*---------- HEADER ----------*/
+
+header {
+  height: 100px;
+  width: 100%;
+  background: white;
+}
+
+
+/*---------- CONTENT AREA ----------*/
+
+.col-3 {
+  width: 100%;
+  height: 200px;
+  float: left;
+}
+
+#column-1 {
+  background: red;
+}
+
+#column-2 {
+  background: orange;
+}
+
+#column-3 {
+  background: yellow;
+}
+
+
+/*---------- FOOTER ----------*/
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: white;
+}
+
+
+/*---------- TABLET ----------*/
+/* Change the background colors below */
+
+@media (min-width: 768px) {
+  header {
+    background-color: darkgrey;
+  }
+
+  #column-1 {
+    background-color: green;
+  }
+
+  #column-2 {
+    background-color: blue;
+  }
+
+  #column-3 {
+    background-color: violet;
+  }
+
+  footer {
+    background-color: darkgrey;
+  }
+  
+}
+
+
+/*---------- Desktops ----------*/
+@media (min-width: 1200px) {
+  header {
+    background-color: black;
+  }
+
+  #column-1 {
+    background-color: purple;
+  }
+
+  #column-2 {
+    background-color: darkorchid;
+  }
+
+  #column-3 {
+    background-color: palevioletred;
+  }
+
+  footer {
+    background-color: black;
+  }
+   
+}
