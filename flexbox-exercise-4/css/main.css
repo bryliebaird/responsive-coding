@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=PT+Serif&display=swap');
+
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -96,34 +98,42 @@ textarea {
    ========================================================================== */
 
 
-html {
-  background-color: #fff;
-  height: 100%;
+html {  
+    background: linear-gradient(#77917a, #8b888c);
+    height: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: 1.25em;
-  height: 100%;
+    padding: 2em;
+    font-size: 1.25em;
 }
 
 .wrapper {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
+    display: flex;
+    justify-content: space-between;
 }
 
 .div-1, .div-2, .div-3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+
+    /* height: 300px; */
+    width: 25%;
+    padding: 30px;
+    background-color: #799284;
+    -moz-box-shadow: 1px 1px 3px 2px #222;
+    -webkit-box-shadow: 1px 1px 3px 2px #222;
+    box-shadow: 1px 1px 3px 2px #222;"
+}
+
+.title {
+    font-family: 'PT Serif', serif;
+}
+.body-text {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
     color: #fff;
-    line-height: 1.5em;
-    font-size: 1.6em;
-    background-color: #f16059;
-    height: 300px;
 }
 
 
