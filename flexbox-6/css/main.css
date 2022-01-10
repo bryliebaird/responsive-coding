@@ -111,9 +111,9 @@ body {
 
 .hero-title {
     font-family: 'Limelight', cursive;
-    font-size: 3em; 
+    font-size: 2em; 
     color: #222;
-    margin-top: 0;
+    margin: 0;
 }
 
 .section-text {
@@ -121,6 +121,7 @@ body {
     font-size: 1.2em; 
     color: #222;
     line-height: 1.75em; 
+    margin-top: .2em;
 }
 
 .highlight-title {
@@ -154,6 +155,16 @@ body {
     align-items: center;
 }
 
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-li {
+  margin-left: 25px;
+}
+
 #highlights {
     display: flex;
     flex-flow: row wrap;
@@ -173,13 +184,14 @@ body {
 footer {
     padding-bottom: 4px;
 }
-ul {
+
+.footer-list {
     display: flex;
     flex-flow: column;
     align-items: flex-end;
 }
 
-li {
+.footer-li {
     font-size: 1em;
     list-style: none;
     padding-right: 20px;
