@@ -23,28 +23,81 @@
 </head>
 
 <body>
-  <!-- HEADER + NAVBAR -->
+<!-- HEADER -->
   <header>
-    <p class="header-logo">Unplugged</p>
-    <nav>
-      <ul class="nav-list">
-        <li class="nav-li">
-          <a class="nav-item" href="#">About</a>
-        </li>
-        <li class="nav-li">
-          <a class="nav-item" href="#">FAQ</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="content-wrapper">
+
+    <!-- HEADER LOGO -->
+     <div class="content-wrapper">
+      <figure>
+        <a href="#">
+          <img src="Assets/logo.png">
+        </a>
+      </figure>
+
+    <!-- HEADER DIVIDER -->
+      <div class="header-divider"></div>
+
+    <!-- NAVBAR -->
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-li">
+            <a class="nav-link" href="about/index.html" target="_blank">About</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link" href="faq/index.html" target="_blank">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section id="hero">
-    <p class="hero-text">Retreat from the desk, return refreshed.</p>
-    <div class="form">
-
-    </div>
-  </section>
+<!-- MAIN CONTENT -->
+ <main>
+<!-- HERO SECTION -->
+   <section id="hero">
+     <div class="content-wrapper">
+       <h2>Retreat from the desk, return refreshed.</h2>
+     </div>
+   </section>
+<!-- ASIDE SECTION -->
+   <aside>
+     <h3 class="headline-text">Want to join the next retreat?</p>
+     <p class="body-text">Find out when we are holding our next retreat and how your company or team can sign up!</p>
+     <h3 class="headline-text">Find out more</p>
+     <form>
+       <input type="email" id="email" name="email">
+       <button type="button" value="Download Itinerary"></button>
+     </form>
+   </aside>
+   
+ </main>
+ 
+ <!-- FOOTER SECTION -->
+ <footer>
+   <div class="content-wrapper">
+		<div class="footer-content">
+         <!-- FOOTER CONTACT -->
+         <div class="footer-contact">
+            <address>
+               <h3 class="headline-text">Contact</h3>
+               <p class="body-text">Phone Number</p>
+               <p class="body-text">Email Address</p>
+            </address>
+         </div>
+         <!-- FOOTER SOCIAL -->
+         <div class="footer-social">
+            <h3 class="headline-text">Social</h3>
+            <div class="social-logos">
+               <img src="#" alt="facebook-logo" class="social-logo">
+               <img src="#" alt="instagram-logo" class="instagram-logo">
+               <img src="#" alt="twitter-logo" class="twitter-logo">
+            </div>
+         </div>
+     </div>
+   
+   </div>
+ </footer>
 
   <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../js/plugins.js"></script>
