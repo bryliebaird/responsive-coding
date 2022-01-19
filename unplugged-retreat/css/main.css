@@ -112,7 +112,6 @@ body {
   margin: 50px 0;
 }
 
-
 /* ############ HEADER + FOOTER ############# */ 
 header,
 footer {
@@ -144,7 +143,8 @@ header .header-divider {
 
 /* ######### FOOTER ########## */ 
 footer {
-  background: goldenrod;
+  background: #212322;
+  color: #fff;
   flex-direction: column;
 }
 
@@ -178,6 +178,8 @@ footer .social-icons {
 
 footer .footer-copyright {
   text-align: center;
+  margin-top: 75px;
+  padding-bottom: 10px;
 }
 
 /* ############# NAVBAR ############ */
@@ -238,24 +240,16 @@ aside h3 {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: lightgrey;
 }
 
-.features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+#features h2 {
+  /* margin-bottom: 60px; */
+  margin-bottom: 20px;
 }
 
-.features h2 {
-  margin-bottom: 60px;
-}
-
-.features-items article {
+#features article {
   width: 63%;
   margin: 30px 0px;
-  text-align: center;
   /* border: 1px solid #000; */
 }
 
@@ -282,6 +276,51 @@ aside h3 {
 .reviews-title {
   margin-bottom: 25px;
 }
+
+/* ############## ABOUT PAGE CSS ############## */
+
+/* ###### MISSION SECTION ###### */ 
+#mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #527158;
+  color: #fff;
+}
+
+#mission h2 {
+  margin-bottom: 20px;
+}
+
+/* ######## GOOGLE MAPS ###### */ 
+#map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ###### CONTACT SECTION ###### */ 
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2a423a;
+  color: #fff;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact h3 {
+  margin-bottom: 8px;
+}
+
+#contact .general-contact {
+  margin-bottom: 25px;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -373,66 +412,67 @@ aside h3 {
 
 /* Tablet Styles */
 @media (min-width: 768px){
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
   
   /* HEADER */ 
+  header {
+    justify-content: space-around;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
   header .header-divider {
     display: none;
   }
 
-  header nav {
-    width: 100%;
-  }
-
-  header nav ul {
-    display: flex;
-    justify-content: end;
-  }
-
-  header nav ul li {
-    margin: 0 0 0 50px
-  }
-
-  /* ASIDE SECTION */
+/* ------ ASIDE SECTION ------- */
   aside .content-wrapper {
+    margin: 50px 0px;
     display: flex;
     justify-content: space-between;
     flex-flow: row;
   }
 
-  aside .form-description, .form {
-    display: flex;
-    flex-flow: column;
-    width: 50%;
+  aside .content-wrapper .form-description, 
+  aside .content-wrapper .form {
+    align-items: center;
+    width: 40%;
+    margin: 0;
   }
 
-  aside .form-description {
-    padding-right: 20px;
+  /* -------- FEATURES SECTION -------- */
+  #features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 50%;
+    /* background: lightgrey; */
   }
 
-  aside .form {
-    padding-left: 20px;
-  }
-  
-  aside input {
-    width: 75%;
-  }
-
-  /* FEATURES SECTION */
-  #features {
+  #features .features-items {
     display: flex;
-    flex-flow: row;
-  }
-  
-  .features-items {
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
   }
 
-  .features-items article {
-    width: 30%;
-    padding: 25px;
+  #features .features-description {
+    width: 50%;
     text-align: center;
   }
 
