@@ -605,8 +605,6 @@ FAG PAGE CSS - TABLET STYLES
 
 
 @media (min-width: 1200px){
-
-
   footer {
     flex-direction: row wrap;
   }
@@ -642,8 +640,21 @@ HOMEPAGE CSS STYLES - DESKTOP
   flex-basis: 33%;
 }
 
+
+/* =====================================================================
+ABOUT PAGE STYLES - DESKTOP 
+======================================================================== */
+
+#mission .mission-items .mission-content {
+  flex-basis:45%;
 }
 
+#mission .mission-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+}
 
 
 
