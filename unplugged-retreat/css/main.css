@@ -89,6 +89,7 @@ textarea {
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 /* ############ BASE STYLES + BODY ############ */
 * {
@@ -97,15 +98,19 @@ textarea {
 }
 
 html {
-  color: #000;
   font-size: 16px;
-  line-height: 1.4;
 } 
 
 body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }
 
 .content-wrapper {
@@ -113,22 +118,25 @@ body {
   margin: 50px 0;
 }
 
+/* ------- GENERAL STYLES -------- */ 
+
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2em;
+  font-size: 1.875em;
 }
 
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
-  color: #e2e3ed;
-  font-size: 1.2em;
+  font-size: 1.125em;
+  color: #fff;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-  color: #e2e3ed;
+  font-size: 1em;
+  line-height: 1.285;
+  color: #fff;
 }
 
 a {
@@ -224,13 +232,16 @@ header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  list-style: none;
+  /* list-style: none; */
   margin: 0;
 }
 
 header nav li a {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.3em;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /* =====================================================================
@@ -285,6 +296,10 @@ aside input {
 #features article {
   width: 63%;
   margin: 30px 0px;
+}
+
+#features article .features-description {
+  color: #000;
 }
 
 /* ######### REVIEWS ######## */
@@ -652,7 +667,7 @@ HOMEPAGE CSS STYLES - DESKTOP
 
 /* ----- FEATURES ------- */ 
 #features h2 {
-  width: 60%;
+  width: 90%;
 }
 
 #features article {
