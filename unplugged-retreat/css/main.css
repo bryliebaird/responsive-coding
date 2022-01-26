@@ -102,15 +102,24 @@ html {
 } 
 
 body {
-  overflow-x: hidden;
+  /* the one simple thing that took you 30 minutes to figure out... prevent overflow on page when mobile/tablet using max-width and overflow-x... must use both PLEASE DONT FORGET*/ 
+  /* max-width: 100%;
+  overflow-x: hidden; */
+
+
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
 }
 
 img {
-  /* all images will take 100% of parent container */
+  /* images will take 100% of parent container */
   width: 100%;
+}
+
+figure {
+  /* images will take 100% of parent container */
+  margin: 0;
 }
 
 ul,
@@ -167,7 +176,7 @@ footer {
 /* ############ HEADER ########## */
 header {
   background: #212322;
-  padding: 15px 0;
+  /* padding: 15px 0; */
 }
 
 header .content-wrapper {
@@ -175,6 +184,15 @@ header .content-wrapper {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin: 25px 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .header-divider {
@@ -255,15 +273,28 @@ HOME PAGE CSS
 
 /* ########## HERO ############## */
 #hero {
+  height: 90vh;
+
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-flow: row wrap;
-  background:lightsteelblue;
+
+  /* hero bg-img */
+  background: url("../img/hero-bg.jpg") center no-repeat #333;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+}
+
+#hero .content-wrapper {
+  margin-top: 25px;
 }
 
 #hero h2 {
   font-size: 3em;
   font-weight: 500;
+  color: #fff;
 }
 
 /* ########## ASIDE #############*/
@@ -316,6 +347,18 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+
+  background: url("../img/features-bg.jpg") center no-repeat #333;
+  background-size: cover;
+  color: #fff;
+}
+
+#features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
 }
 
 #features h2 {
@@ -328,15 +371,14 @@ input[type=button] {
   margin: 30px 0px;
 }
 
-#features article .features-description {
-  color: #000;
-}
+
 
 /* ######### REVIEWS ######## */
 #reviews {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  align-items: center;
+  flex-flow: column wrap;
   background: #2a423a;
   color: #fff;
 }
@@ -346,27 +388,17 @@ input[type=button] {
 }
 
 #reviews .reviews-items {
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-}
-
-.reviews-container:nth-child(2){
-  width: 50%; 
-  align-self: flex-start;
+  margin-top: 10px;
 }
 
 #reviews .reviews-title {
   font-size: 1.3em;
   letter-spacing: .75px;
   margin-bottom: 12px;
+  margin-top: 10px;
 }
 
-#reviews-img {
-  margin: 25px 0;
-  height: 100px;
-  width: 200px;
-}
+
 
 /* =====================================================================
 ABOUT PAGE CSS
@@ -545,6 +577,10 @@ FAG PAGE CSS
     justify-content: space-between;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav {
     width: 20%;
   }
@@ -596,13 +632,31 @@ FAG PAGE CSS
   }
 
   /* --------- REVIEWS SECTION ---------- */
+ 
+  #reviews {
+    display: flex;
+    flex-flow: row wrap;
+    background: #2a423a;
+    color: #fff;
+  }
+ 
   #reviews .reviews-items{
-    justify-content: left;
+    display: flex;
+    margin-top: 60px;
+  }
+
+  #reviews .reviews-title {
+    margin-top: 0;
   }
 
   .reviews-container:first-child {
     padding-right: 25px;
   }
+
+  .reviews-container:nth-child(2){
+    width: 50%; 
+    align-self: flex-start;
+  } 
 
   #reviews-img {
     margin: 0px;
