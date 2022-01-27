@@ -419,11 +419,46 @@ ABOUT PAGE CSS
 
 
 /* ######## GOOGLE MAPS ###### */ 
-#map {
+/* #map {
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+
+#map figure {
+  width: 100%;
+  
+  
+  overflow: hidden;
+  position: relative;
 }
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+}
+
+#map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+}
+
+
+
 
 /* ###### CONTACT SECTION ###### */ 
 #contact {
@@ -592,6 +627,12 @@ FAG PAGE CSS
   header .header-divider {
     display: none;
   }
+
+  /*  GOOGLE MAPS */
+  #map figure {
+    padding-bottom: 50%;
+  }
+  
 
 /* ------ ASIDE SECTION ------- */
   aside .content-wrapper {
@@ -782,6 +823,10 @@ ABOUT PAGE STYLES - DESKTOP
 #mission .mission-items {
   display: flex;
   justify-content: space-between;
+}
+
+#map figure {
+  padding-bottom: 35%;
 }
 
 }
